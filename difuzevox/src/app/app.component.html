@@ -1,0 +1,36 @@
+<div style="margin: 15px;">
+    <div>
+      <table>
+        <tr>
+          <th>
+            Name
+          </th>
+          <th>
+            Account Number
+          </th>
+          <th>
+            Address
+          </th>
+          <th>
+            Age
+          </th>
+        </tr>
+        <tr *ngFor="let data of bankdata">
+          <td>
+            {{data._source.employer}}
+          </td>
+          <td>
+            {{data._source.account_number}}
+          </td>
+          <td>
+            {{data._source.address}}
+          </td>
+          <td>
+            {{data._source.age}}
+          </td>
+        </tr>
+      </table>
+    </div>
+</div>
+<br/>
+
